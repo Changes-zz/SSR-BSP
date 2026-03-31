@@ -58,6 +58,9 @@ void CAN1_RX0_IRQHandler(void);
 void CAN1_RX1_IRQHandler(void);
 void USART2_IRQHandler(void);
 void TIM8_TRG_COM_TIM14_IRQHandler(void);
+void DMA2_Stream1_IRQHandler(void);
+void DMA2_Stream6_IRQHandler(void);
+void USART6_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

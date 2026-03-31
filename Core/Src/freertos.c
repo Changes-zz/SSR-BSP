@@ -25,12 +25,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "motor_dm_task.h"
-#include "motor_dji_task.h"
-#include "drv_can.h"
-/* 如果 drv_can.h 中没有声明，这里再显式声明一次以避免隐式声明 */
-void TIM_CAN_PeriodElapsedCallback(void);
-void TIM_UART_PeriodElapsedCallback(void);
+
+/* USER CODE END Includes */
+
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
@@ -61,14 +58,14 @@ const osThreadAttr_t TaskJ4310_attributes = {
 osThreadId_t Task3508Handle;
 const osThreadAttr_t Task3508_attributes = {
   .name = "Task3508",
-  .stack_size = 128 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 extern void J4310_Task(void *argument);
-extern void DJI_M3508_Task(argument);
+extern void DJI_M3508_Task(void *argument);
 /* USER CODE END FunctionPrototypes */
 
 void StartTaskJ4310(void *argument);

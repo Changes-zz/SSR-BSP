@@ -3,7 +3,7 @@ test_feedback\dvc_serialplot.o: ..\User\Device\dvc_serialplot.h
 test_feedback\dvc_serialplot.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 test_feedback\dvc_serialplot.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 test_feedback\dvc_serialplot.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-test_feedback\dvc_serialplot.o: ..\User\Driver\drv_uart.h
+test_feedback\dvc_serialplot.o: ../User/Driver/drv_uart.h
 test_feedback\dvc_serialplot.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 test_feedback\dvc_serialplot.o: ../Core/Inc/stm32f4xx_hal_conf.h
 test_feedback\dvc_serialplot.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h

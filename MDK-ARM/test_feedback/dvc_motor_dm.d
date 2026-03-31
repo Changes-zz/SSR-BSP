@@ -1,7 +1,7 @@
 test_feedback\dvc_motor_dm.o: ..\User\Device\dvc_motor_dm.cpp
 test_feedback\dvc_motor_dm.o: ..\User\Device\dvc_motor_dm.h
-test_feedback\dvc_motor_dm.o: ..\User\Algorithm\alg_pid.h
-test_feedback\dvc_motor_dm.o: ..\User\Driver\drv_math.h
+test_feedback\dvc_motor_dm.o: ../User/Algorithm/alg_pid.h
+test_feedback\dvc_motor_dm.o: ../User/Driver/drv_math.h
 test_feedback\dvc_motor_dm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 test_feedback\dvc_motor_dm.o: ../Core/Inc/stm32f4xx_hal_conf.h
 test_feedback\dvc_motor_dm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
@@ -39,4 +39,4 @@ test_feedback\dvc_motor_dm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 test_feedback\dvc_motor_dm.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 test_feedback\dvc_motor_dm.o: D:\keil5\ARM\ARMCC\Bin\..\include\cfloat
 test_feedback\dvc_motor_dm.o: D:\keil5\ARM\ARMCC\Bin\..\include\float.h
-test_feedback\dvc_motor_dm.o: ..\User\Driver\drv_can.h
+test_feedback\dvc_motor_dm.o: ../User/Driver/drv_can.h

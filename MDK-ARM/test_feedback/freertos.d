@@ -43,6 +43,3 @@ test_feedback\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_
 test_feedback\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 test_feedback\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 test_feedback\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
-test_feedback\freertos.o: ..\UserTask\motor_dm_task.h
-test_feedback\freertos.o: ..\UserTask\motor_dji_task.h
-test_feedback\freertos.o: ..\User\Driver\drv_can.h

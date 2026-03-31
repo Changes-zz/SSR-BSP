@@ -1,6 +1,6 @@
 test_feedback\alg_pid.o: ..\User\Algorithm\alg_pid.cpp
 test_feedback\alg_pid.o: ..\User\Algorithm\alg_pid.h
-test_feedback\alg_pid.o: ..\User\Driver\drv_math.h
+test_feedback\alg_pid.o: ../User/Driver/drv_math.h
 test_feedback\alg_pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 test_feedback\alg_pid.o: ../Core/Inc/stm32f4xx_hal_conf.h
 test_feedback\alg_pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h

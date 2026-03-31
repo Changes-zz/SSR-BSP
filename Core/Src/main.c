@@ -119,10 +119,16 @@ void CAN_Motor_Call_Back(Struct_CAN_Rx_Buffer *Rx_Buffer)
     case (0x201):
     {
       DJI_M3508_CAN_RxCpltCallback(Rx_Buffer->Data);
+      break;
     }
     case (0x00):
     {
       J4310_CAN_RxCpltCallback(Rx_Buffer->Data);
+      break;
+    }
+    default:
+    {
+      break;
     }
   }
 }
@@ -196,6 +202,7 @@ int main(void)
   MX_DMA_Init();
   MX_CAN1_Init();
   MX_USART2_UART_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
 
   BSP_Init(BSP_DC24_LU_ON | BSP_DC24_LD_ON | BSP_DC24_RU_ON | BSP_DC24_RD_ON);
@@ -236,7 +243,7 @@ int main(void)
   {
     //延时1ms
     HAL_Delay(0); 
-  /* USER CODE END WHILE */
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
     }
@@ -306,6 +313,7 @@ void TIM14_Callback(void)
 }
 
 /* USER CODE END 4 */
+
 
 /**
   * @brief  This function is executed in case of error occurrence.
